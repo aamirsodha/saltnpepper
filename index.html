@@ -1,58 +1,145 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
-    <title>Main Page Source aamir</title>
+    <title>Main Page</title>
+
+    <link media="print" onload="this.media='all'" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+        rel="stylesheet" />
 
     <style>
-        body{
-            margin:auto;
-            color:#ffffff;
-            font-size:14px;
-            font-weight:300;
-            font-family:apercu;
-            line-height:24px;
+        body {
+            margin: auto;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 300;
+            font-family: apercu;
+            line-height: 24px;
         }
+
         .Header {
             background-color: black;
             /*height: 92px;*/
             width: 100%;
             padding: 8px 0px 8px 0px;
         }
-        ul{
-            margin:0;
-            padding:0;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ul2 {
+            display: flex;
+            list-style: none;
+            margin-left: auto !important;
+        }
+
+        .ul2 a {
+            padding: 17px;
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        i {
+            background-color: #ffffff;
+            color: #dc3545;
+            padding: 6px 7px;
+            border-radius: 23px;
+            margin-left: 7px;
         }
     </style>
 </head>
+
 <body>
 
     <div class="Header">
-        <div>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="logo.png" style="width:165px" />
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Publications</a>
-                </li>
-                <li>
-                    <a href="#">Feedback</a>
-                </li>
-            </ul>
+        <div style="width: 75%; margin: 0 auto;">
+            <div style="display: inline-block;">
+                <img src="logo.png" style="width:165px" />
+            </div>
+            <div style="display: inline-block; float: right; padding-top: 10px;">
+                <ul class="ul2">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Publications</a>
+                    </li>
+                    <li>
+                        <a href="#">Feedback</a>
+                    </li>
+                    <li style="border: 1px solid; border-color: #ffffff !important; border-radius: 35px;">
+                        <a href="#">Get a Franchise</a>
+                    </li>
+                    <li style="background-color: red !important; margin-left: 10px; border-radius: 35px;">
+                        <a href="#">
+                            Order Online
+                            <span><i class="fa fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
+    <div>
+        <section class="web-slider">
+
+            <div id="banner_slider" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+
+                <ul class="carousel-indicators banner_slider_indicators">
+
+
+                    <li data-target="#banner_slider" data-slide-to="0" class=""></li>
+
+
+                    <li data-target="#banner_slider" data-slide-to="1" class=""></li>
+
+
+                    <li data-target="#banner_slider" data-slide-to="2" class=""></li>
+
+
+                    <li data-target="#banner_slider" data-slide-to="3" class="active"></li>
+
+
+                </ul>
+
+                <!-- The slideshow -->
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item">
+
+
+                        <a href="https://saltnpepper.com.pk/">
+
+                            <figure><img
+                                    src="https://static.tossdown.com/images/ac51af11-090c-49e8-9296-472de72fc5cb.webp"
+                                    class="figure-img w-100 h-auto cover"></figure>
+
+                        </a>
+
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+
+        </section>
     </div>
 
 </body>
+
 </html>
